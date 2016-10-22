@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*清楚浮动*/
+.clearfix{
+	zoom:1;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+	zoom:1;
+}
+
+.container{
+	max-height: 800px;
+	min-width: 800px;
+	margin: 20px;
+	padding: 20px;
+	background: #eee;
+	border: 1px solid #999;
+}
+.left{
+	float: left;
+	width: 200px;
+	background: #fff;
+	border: 1px solid #999;
+}
+.left .logo{
+	width: 80px;
+	height: 80px;
+	margin: 20px;
+	text-align: center;
+	background: #eee;
+	border: 1px solid #999;
+}
+.right{
+	float: right;
+	width: 120px;
+	background: #fff;
+	border: 1px solid #999;
+}
+.right .logo{
+	width: 80px;
+	height: 80px;
+	margin: 20px;
+	text-align: center;
+	background: #eee;
+	border: 1px solid #999;
+}
+.main{
+	margin-left: 220px;
+	margin-right: 140px;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #999;
+}
+.main p{
+	margin-bottom: 20px;
+}
