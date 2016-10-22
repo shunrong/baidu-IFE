@@ -1,0 +1,54 @@
+/*reset*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+}
+
+/*页面头部*/
+header{
+	height: 90px;
+	background: #333;	
+}
+header h1{
+	float: left;
+	width: 200px;
+	height: 90px;
+	margin-left: 50px;
+	background: url(baidu_logo.png) no-repeat;
+	background-size:contain;
+	background-position: left center;
+}
+header ul{
+	float: right;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+header ul li{
+	display: inline-block;
+	margin-left: 10px;
+}
+header ul li a{
+	color: #fff;
+}
+
+/*页面主体*/
+div{
+	padding: 20px;
+	background: #ccc;
+}
+article,section,aside{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #fff;
+	box-shadow: 2px 2px 5px #333;
+}
+
+/*页脚部分*/
+footer{
+	height: 60px;
+	background: #333;
+	color: #eee;
+	text-align: center;
+	line-height: 60px;
+}
