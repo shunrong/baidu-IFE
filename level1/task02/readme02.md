@@ -1,4 +1,4 @@
-##需求说明
+###需求说明
 在任务一的基础上添加css样式，实现示例图中的网页
 
 - 标题相关：h1~h6
@@ -11,4 +11,10 @@
 ###html新标签
 header，footer，sdide，article，section
 figure，figcaption
+
+###表格样式
+- 单边框border-collapse: collapse;
+
+###表单样式
+- 密码输入框input[type=password]
 

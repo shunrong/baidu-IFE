@@ -5,6 +5,16 @@
 	font-family: "Microsoft Yahei";
 }
 
+/*清楚浮动*/
+.clearfix{
+	zoom:1;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+	zoom:1;
+}
 /*页面头部*/
 header{
 	height: 90px;
@@ -33,9 +43,12 @@ header ul li a{
 }
 
 /*页面主体*/
-div{
+.container{
 	padding: 20px;
 	background: #ccc;
+}
+.main{
+	margin-right: 460px;
 }
 article,section,aside{
 	padding: 20px;
@@ -66,6 +79,9 @@ article p{
 	text-indent: 2em;
 	color: #333;
 	line-height: 28px;
+}
+article img{
+	max-width: 600px;
 }
 article ul{
 	list-style: none;
@@ -98,8 +114,10 @@ section h1{
 	margin-bottom: 20px;
 }
 section figure{
+	float: left;
+	margin-right: 20px;
 	padding: 10px;
-	width: 200px;
+	width: 160px;
 	text-align: center;
 	border: 1px solid #333;
 	margin-bottom: 20px;
@@ -137,19 +155,23 @@ article table tfoot{
 }
 /*侧栏部分*/
 aside{
-	min-width: 600px;
+	width: 400px;
+	float: right;
 }
 aside h2{
-	font-size: 24px;
-	padding: 10px;
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px;
 	color: #333;
 }
-aside h2::before{
-	content: "0";
-	visibility: hidden;
+aside h2 i{
+	display: inline-block;
 	width: 5px;
-	height: 24px;
+	height: 30px;
+	vertical-align: middle;
 	background: #aaa;
+	margin-right: 10px;
 }
 aside form{
 	font-size: 12px;
@@ -160,7 +182,7 @@ aside form div{
 }
 aside form label{
 	display: inline-block;
-	width: 200px;
+	width: 100px;
 	text-align: right;
 	margin-right: 20px;
 }
@@ -172,13 +194,14 @@ aside form div input[type=password]{
 }
 aside form div input[type=radio],
 aside form div input[type=checkbox]{
-	margin-right: 10px;
+	margin-left: 10px;
+	margin-right: 5px;
 }
 aside form div textarea{
 	vertical-align: top;
 }
 aside form p{
-	margin-left: 224px;
+	margin-left: 124px;
 	margin-top: 10px;
 	color: #ccc;
 }
